@@ -1,0 +1,166 @@
+:root {
+    --background-color: #2c3e50;
+    --border-color    : #7591AD;
+    --text-color      : #34495e;
+    --color1          : #EC3E27;
+    --color2          : #fd79a8;
+    --color3          : #0984e3;
+    --color4          : #00b894;
+    --color5          : #fdcb6e;
+    --color6          : #e056fd;
+    --color7          : #F97F51;
+    --color8          : #BDC581;
+}
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.bodysimple {
+    background-color: rgb(41, 37, 37);
+    opacity         : 80%;
+    width           : 70%;
+    margin          : 10px auto;
+}
+
+.forms {
+    display       : flex;
+    flex-direction: column;
+
+
+    margin-top   : 30px;
+    margin-bottom: 50px;
+    margin-left  : 50px;
+
+    color      : rgb(24, 233, 24);
+    font-size  : 30px;
+    text-shadow: 0 0 5px #fff;
+}
+
+
+.forms input {
+    margin-left  : 15px;
+    margin-right : 25px;
+    margin-top   : 10px;
+    margin-bottom: 30px;
+    height       : 30px;
+    border-radius: 10px;
+}
+
+.forms select {
+    margin-left  : 15px;
+    margin-right : 25px;
+    margin-top   : 10px;
+    margin-bottom: 30px;
+    height       : 30px;
+    width        : 200px;
+    border-radius: 10px;
+}
+
+.forms label {
+    color: aqua;
+}
+
+#Friend {
+    margin-left: 29px;
+}
+
+#tu {
+    height: 30%;
+    width : 30%;
+}
+
+#email {
+    width: 380px;
+}
+
+#recordmod {
+    opacity: 0;
+}
+
+#file {
+    display       : flex;
+    flex-direction: column;
+}
+
+#file img {
+    width        : 120px;
+    z-index      : -3;
+    margin-left  : 150px;
+    margin-top   : -60px;
+    margin-bottom: 1px;
+}
+
+#recordmod:hover {
+    cursor: pointer;
+}
+
+.button1:hover {
+    cursor: pointer;
+}
+
+.button2:hover {
+    cursor: pointer;
+}
+
+.button1 {
+    width           : 150px;
+    background-color: #4831af;
+    height          : auto;
+    font-size       : 25px;
+    color           : rgb(224, 20, 20);
+    text-shadow     : 0 0 10px #fff;
+}
+
+.button2 {
+    width           : 150px;
+    background-color: #ce1029;
+    height          : auto;
+    font-size       : 25px;
+    color           : rgb(53, 37, 192);
+    text-shadow     : 0 0 10px #fff;
+}
+
+@media only screen and (max-width: 959px) {
+    .topbar {
+        display: none;
+    }
+
+    .float {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .gametext {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+.names {
+    display       : flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 959px) {
+    .names {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .forms {
+        display: none;
+    }
+}
+

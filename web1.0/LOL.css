@@ -1,0 +1,111 @@
+:root {
+    --background-color: #2c3e50;
+    --border-color    : #7591AD;
+    --text-color      : #34495e;
+    --color1          : #EC3E27;
+    --color2          : #fd79a8;
+    --color3          : #0984e3;
+    --color4          : #00b894;
+    --color5          : #fdcb6e;
+    --color6          : #e056fd;
+    --color7          : #F97F51;
+    --color8          : #BDC581;
+}
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miaoshu{
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0 0 10px #fff;
+}
+
+.photo img{
+    border-radius: 30px;
+    width: 500px;
+    height: 320px;
+    margin-right : 30px;
+    margin-left  : 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 2);
+    transition: all 1s;
+}
+
+.photo img:hover {
+    cursor   : pointer;
+    transform: scale(1.2);
+}
+
+table {
+    border: 5px solid rgb(186, 231, 21);
+
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 0 10px rgb(238, 228, 228);
+}
+
+th {
+	border: 1px solid rgb(186, 231, 21);
+}
+
+table th:first-child {
+	width: 30%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table th:nth-child(2) {
+	width: 50%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+td {
+	border: 1px solid rgb(186, 231, 21);
+	text-align: left
+}
+
+.yuan{
+    stroke: #e6ae47;
+    stroke-width: 3px;
+    fill: rgb(36, 136, 136);
+    z-index: 100;
+}
+
+.juxing{
+    fill:#e6ae47 ;
+}
+@media only screen and (max-width: 959px) {
+    .topbar{
+        display: none;
+    }
+    .float{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+    .gametext{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .forms{
+        display: none;
+    }
+    }

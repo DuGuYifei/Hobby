@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="MyHobby.css" />
+    <link rel="stylesheet" type="text/css" href="LOL.css" />
+    <link rel="stylesheet" type="text/css" href="Team.css" />
+    <meta charset="UTF-8" />
+    <title>My Hobby</title>
+    <meta name="keywords" content="Hobby, Game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="bg">
+    <div class="topbar">
+        <div class="inside">
+            <ul>
+                <li class="dropdown"><a href="#">Mian Page</a>
+                    <div class="none">
+                        <ul>
+                            <li><a href="MyHobby.html">My Hobby</a></li>
+                            <li><a href="LOL.html">LOL</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://www.riotgames.com/en" target="blank">Riot</a></li>
+                <li><a href="https://na.leagueoflegends.com/en-us/" target="blank">LoL</a></li>
+                <li><a href="https://signup.eune.leagueoflegends.com/en/signup/index#/" target="blank">Download</a></li>
+            </ul>
+        </div>
+        <svg width="300" height="180">
+            <circle cx="50" cy="40" r="30" class="yuan" />
+            <rect x="30" y="8" height="62" width="10" class="juxing" />
+            <rect x="28" y="60" height="10" width="43" class="juxing" />
+        </svg>
+    </div>
+
+    <div class="float">
+        <div class="inside">
+            <ul>
+                <li class="dropdown"><a href="#">Mian Page</a>
+                    <div class="none">
+                        <ul>
+                            <li><a href="MyHobby.html" target="blank">My Hobby</a></li>
+                            <li><a href="LOL.html">LOL</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://www.riotgames.com/en" target="blank">Riot</a></li>
+                <li><a href="https://na.leagueoflegends.com/en-us/" target="blank">LoL</a></li>
+                <li><a href="https://signup.eune.leagueoflegends.com/en/signup/index#/" target="blank">Download</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header">
+        <div>
+            <h1>string MyHobby = "Game"</h1>
+        </div>
+    </div>
+
+    <div class="bodysimple">
+        <h2>Play with me</h2>
+        <br>
+        <div class="miaoshu">
+            <p>You can add friend in game. My ID is <i> ManiacRumble </i>. Or you can send me email to tell me your
+                information.</p>
+        </div>
+
+        <form class="forms">
+            <div class="names">
+                <div>First name:<input type="text" name="fname"></div>
+                <div>Last name:<input type="text" name="lname"></div>
+            </div>
+            <div>
+                Telephone:<input type="tel" name="telephone" id="Telephone">
+            </div>
+            <div>
+                Group:
+                <input type="checkbox" name="Friend" id="Friend">
+                <label for="Friend">Friend</label>
+                <input type="checkbox" name="Family" id="Family">
+                <label for="Family">Family</label>
+                <input type="checkbox" name="Schollmate" id="Schollmate">
+                <label for="Schollmate">Schollmate</label>
+            </div>
+            <div>
+                Gender:
+                <input type="radio" name="Gender" id="Male">
+                <label for="Male">Male</label>
+                <input type="radio" name="Gender" id="Female">
+                <label for="Female">Female</label>
+            </div>
+            <div>
+                Email address:<input type="text" name="Email" id="email">
+            </div>
+            <div>
+                Which game you want to play:
+                <select name="game" id="choosegame">
+                    <option value="OW">OverWatch</option>
+                    <option value="HS">Hearthstone</option>
+                    <option value="CS">CSGO</option>
+                    <option value="PUBG">PUBG</option>
+                    <option value="LOL">LoL</option>
+                    <option value="study">study</option>
+                </select>
+            </div>
+            <div id="file">
+                <div>Submit the recent record or game mod.</div>
+                <input type="file" name="mod" id="recordmod">
+                <img src="img/submit.svg" alt="submit">
+            </div>
+            <div>
+                <div>You can click the image to submit:</div>
+                <input type="image" src="img/1.jpg" alt="fiveelement" id="tu">
+            </div>
+            <div class="button">
+                <input type="submit" class="button1" value="Submit">
+                <input type="reset" class="button2" value="Reset">
+            </div>
+        </form>
+    </div>
+
+
+
+    <footer>s188026, Yifei Liu, Group1 subgroup1, 2020/11/24</footer>
+    <nav class="toTop">
+
+        <a href="MyHobby.html">My Hobby</a><br>
+        <a href="LOL.html">LOL</a><br>
+        <i>Black Shop</i><br>
+
+    </nav>
+
+    <nav class="toTopfloat">
+
+        <a href="MyHobby.html">My Hobby</a><br>
+        <a href="LOL.html">LOL</a><br>
+        <i>Team</i><br>
+
+
+        <a href="Team.html"><img src="img/arrow.png" height="30" width="30" alt="to top"></a>
+    </nav>
+
+
+    <script>
+        let floatDiv = document.querySelector('.float');
+
+        window.addEventListener('scroll', () => {
+            let top = document.documentElement.scrollTop;
+
+            if (top > 50) {
+                floatDiv.classList.add('show');
+            }
+            else {
+                floatDiv.classList.remove('show');
+            }
+        })
+
+        let toTopfloatDiv = document.querySelector('.toTopfloat');
+        let toTopDiv = document.querySelector('.toTop');
+        window.addEventListener('scroll', () => {
+            let toptotop = document.documentElement.scrollTop;
+
+            if (toptotop > 260) {
+                toTopfloatDiv.classList.add('show');
+                toTopDiv.classList.add('hidden');
+            }
+            else {
+                toTopfloatDiv.classList.remove('show');
+                toTopDiv.classList.remove('hidden');
+            }
+        })
+    </script>
+
+</body>
+
+</html>

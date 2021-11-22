@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+
+<link rel="stylesheet" type="text/css" href="MyHobby.css" />
+<link rel="stylesheet" type="text/css" href="LOL.css" />
+<meta charset="UTF-8" />
+<title>My Hobby</title>
+<meta name="keywords" content="Hobby, Game" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<body class="bg">
+    <div class="topbar">
+        <div class="inside">
+            <ul>
+                <li class="dropdown"><a href="https://www.blizzard.com/en-sg/" target="blank">Blizzard</a>
+                    <div class="none">
+                        <ul>
+                            <li><a href="https://playoverwatch.com/en-us/" target="blank">OverWatch</a></li>
+                            <li><a href="https://playhearthstone.com/en-us" target="blank">HearthStone</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://blog.counter-strike.net/" target="blank">CSGO</a></li>
+                <li><a href="https://www.pubg.com/" target="blank">PUBG</a></li>
+                <li><a href="https://www.riotgames.com/en" target="blank">Riot</a></li>
+            </ul>
+        </div>
+        <svg width="300" height="180">
+            <circle cx="50" cy="40" r="30" class="yuan" />
+            <rect x="30" y="8" height="62" width="10" class="juxing" />
+            <rect x="28" y="60" height="10" width="43" class="juxing" />
+        </svg>
+    </div>
+
+    <div class="float">
+        <div class="inside">
+            <ul>
+                <li class="dropdown"><a href="https://www.blizzard.com/en-sg/" target="blank">Blizzard</a>
+                    <div class="none">
+                        <ul>
+                            <li><a href="https://playoverwatch.com/en-us/" target="blank">OverWatch</a></li>
+                            <li><a href="https://playhearthstone.com/en-us" target="blank">HearthStone</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="https://blog.counter-strike.net/" target="blank">CSGO</a></li>
+                <li><a href="https://www.pubg.com/" target="blank">PUBG</a></li>
+                <li><a href="https://www.riotgames.com/en" target="blank">Riot</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="header">
+            <div>
+                <h1>string MyHobby = "Game"</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="body">
+        <section>
+            <h2>My favourite game is League of Legends</h2>
+            <div class="miaoshu">
+                <p>League of Legends (abbreviated LoL ) - Network computer game genre multiplayer online battle
+                    arena.
+                    It was created on the basis of the Defense of the Ancients (DotA) modification for Warcraft III:
+                    The
+                    Frozen Throne . It was produced and released by Riot Games studio , initially only for Windows.
+                    It
+                    was announced on October 7, 2008, and was released on October 26, 2009.</p>
+            </div>
+            <div class="photo">
+                <a href="https://www.mobafire.com/league-of-legends/champion/gnar-120" target="blank"><img
+                        src="img/L2.jpg" alt="LOL"></a>
+                <a href="https://www.mobafire.com/league-of-legends/yasuo-guide" target="blank"><img src="img/L3.jpg"
+                        alt="LOL"></a>
+            </div>
+            <div class="RankTable">
+                <table>
+                    <tr>
+                        <th>Game</th>
+                        <th>League of Legends</th>
+                    </tr>
+                    <tr>
+                        <td>Class</td>
+                        <td>Tanks Fighters Slayers Mages Controllers Marksmen</td>
+                    </tr>
+                    <tr>
+                        <td>Ranks</td>
+                        <td>Iron Bronze Silver Gold Platinum Diamond Master GrandMaster Challenger</td>
+                    </tr>
+                </table>
+
+            </div>
+        </section>
+    </div>
+
+
+
+    <footer>s188026, Yifei Liu, Group1 subgroup1, 2020/11/24</footer>
+
+    <nav class="toTop">
+
+        <a href="MyHobby.html">My Hobby</a><br>
+        <i>LOL</i><br>
+        <a href="Team.html">Black Shop</a><br>
+
+    </nav>
+
+    <nav class="toTopfloat">
+
+        <a href="MyHobby.html">My Hobby</a><br>
+        <i>LOL</i><br>
+        <a href="Team.html">Team</a><br>
+
+
+        <a href="LOL.html"><img src="img/arrow.png" height="30" width="30" alt="to top"></a>
+    </nav>
+
+    <script>
+        let floatDiv = document.querySelector('.float');
+
+        window.addEventListener('scroll', () => {
+            let top = document.documentElement.scrollTop;
+
+            if (top > 50) {
+                floatDiv.classList.add('show');
+            }
+            else {
+                floatDiv.classList.remove('show');
+            }
+        })
+
+        let toTopfloatDiv = document.querySelector('.toTopfloat');
+        let toTopDiv = document.querySelector('.toTop');
+        window.addEventListener('scroll', () => {
+            let toptotop = document.documentElement.scrollTop;
+
+            if (toptotop > 260) {
+                toTopfloatDiv.classList.add('show');
+                toTopDiv.classList.add('hidden');
+            }
+            else {
+                toTopfloatDiv.classList.remove('show');
+                toTopDiv.classList.remove('hidden');
+            }
+        })
+    </script>
+
+</body>
+
+</html>
